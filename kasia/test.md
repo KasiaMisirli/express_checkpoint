@@ -61,7 +61,10 @@ app.use(bodyParser.urlencoded({extended: true}))
 ```
 
 ```text
-Your answer...
+First line require module body parser.
+bodyparser: extract the entire body portion of an incoming request stream and exposes it on req.body.
+bodyParser.json: Returns middleware that only parses json and only looks at requests where the Content-Type header matches the type option.
+bodyParser.urlencoded: Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option. 
 ```
 
 ### Question 5
