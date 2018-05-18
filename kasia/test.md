@@ -18,10 +18,25 @@ Then, make each route respond with a one-word string containing the RESTful acti
 var express = require("express")
 var app = express()
 
-// Your code starts here...
+app.get('/', function (request, response) {
+  res.send("read")
+})
 
+app.post('/quotes', (req, res) => {
+  res.send('create')
+})
+
+app.get('/', (req, res) => {
+  res.send("find")
+})
+
+app.put('/name/update/:id', (req, res, next) => {
+    res.send("update")
+})
 ```
-
+app.delete('/name/delete/:id', (req, res, next) => {
+    res.send("delete")
+});
 ### Question 3
 
 Describe the differences between Express and Rails as backend frameworks.
