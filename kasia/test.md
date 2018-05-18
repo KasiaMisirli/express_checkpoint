@@ -90,5 +90,20 @@ Your answer...
 Create an instance of the BankAccount class
 
 ```text
-Your answer...
+class BankAccount{
+  constructor(balance = 0){
+    this.balance = balance
+  }
+  withdraw(amountW){
+    `${this.balance}` = `${this.balance}`-= amountW
+    return balance
+  }
+  deposit(amountD){
+    `${this.balance}` = `${this.balance}` += amountD
+    return balance
+  }
+  showBalance(){
+    console.log(`${balance}`)
+  }
+}
 ```
