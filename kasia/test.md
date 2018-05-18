@@ -42,7 +42,12 @@ app.delete('/name/delete/:id', (req, res, next) => {
 Describe the differences between Express and Rails as backend frameworks.
 
 ```text
-Your answer...
+Rails is used with Ruby and its a framework that is less flexible in terms of naming files. Rails on default creates files that we should use if we want to follow the convention. Also its seems to require more files then Express. Ruby uses preinstalled gems as long as we specify them in the gemfile. Rails can only be tested in the terminal.We can run it in our local host if we set up the server file. Uses controller files (user_controller.rb). Uses model files ending with erb.
+
+
+Express is used with NodeJS, aka Javascript and its less "opinionated", meaning has less preset conventions, which makes it more flexible. 
+Also, we need to install modules every time we create a new project.
+Express can be tested in dev tools. We can run it in our local host if we set up the server file. Doesnt have controller files. Uses model files ending with ejs.
 ```
 
 ### Question 4
