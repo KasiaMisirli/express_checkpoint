@@ -6,6 +6,7 @@ What is `module.exports` and why do we use it?
 
 ```text
 this is an object. module is a variable that reperesents current module and exports is an object exposed to the module. this can be assigned to function or object that we want to be used in another file
+Kasun: export code from one file to another,reduce complexity and repitation.
 ```
 
 ### Question 2
@@ -36,7 +37,7 @@ app.put('/name/update/:id', (req, res, next) => {
 ```
 app.delete('/name/delete/:id', (req, res, next) => {
     res.send("delete")
-});
+})
 ### Question 3
 
 Describe the differences between Express and Rails as backend frameworks.
@@ -93,17 +94,20 @@ Create an instance of the BankAccount class
 class BankAccount{
   constructor(balance = 0){
     this.balance = balance
+    this.history = []
   }
   withdraw(amountW){
-    `${this.balance}` = `${this.balance}`-= amountW
+    this.balance -= amountW
+    this.history.push({type: "w",amount: amountW })
     return balance
   }
   deposit(amountD){
-    `${this.balance}` = `${this.balance}` += amountD
+    this.balance += amountD
     return balance
   }
   showBalance(){
-    console.log(`${balance}`)
+    console.log(balance)
   }
+
 }
 ```
